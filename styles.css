@@ -1,0 +1,82 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #05161a;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+header, footer {
+  background-color: #072e33;
+  padding: 20px;
+  text-align: center;
+}
+nav a {
+  margin: 0 10px;
+  color: #0f969c;
+  text-decoration: none;
+}
+section {
+  padding: 30px;
+}
+.proyecto {
+  border: 1px solid #0c7075;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #072e33;
+}
+a {
+  color: #0f969c;
+}
+button {
+  background-color: #0c7075;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+form input, form textarea {
+  padding: 10px;
+  margin: 5px 0;
+}
+
+/* Diseño móvil */
+@media (max-width: 600px) {
+  header, footer {
+    padding: 10px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  nav a {
+    margin: 5px 0;
+  }
+  section {
+    padding: 15px;
+  }
+  .proyecto {
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Diseño tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .proyecto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
