@@ -3,52 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio - Daniela</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <title>Portafolio de Daniela</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Daniela ⚡ Portafolio</h1>
+    <h1>Daniela [Apellido]</h1>
+    <p>Ingeniera de Software | Diseñadora Tech</p>
     <nav>
-      <ul>
-        <li><a href="#sobre">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#accesos">Accesos</a></li>
-      </ul>
+      <a href="#acerca">Acerca de mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#formacion">Formación</a>
+      <a href="#portafolio">Proyectos</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <section id="sobre">
-    <h2>Sobre mí</h2>
-    <p>Diseñadora con espíritu tech, visión geek y enfoque moderno. Apasionada por crear experiencias visuales que conecten tecnología y emoción.</p>
-  </section>
-
-  <section id="proyectos">
-    <h2>Proyectos destacados</h2>
-    <div class="proyecto">
-      <h3>Cenfotec Shirt Design</h3>
-      <p>Diseño exclusivo para Universidad Cenfotec, fusionando estética geek con innovación textil.</p>
-    </div>
-  </section>
-
   <section id="contacto">
-    <h2>Contacto</h2>
-    <p>¿Quieres colaborar? Escribime a <a href="mailto:daniela@email.com">daniela@email.com</a></p>
+    <h2>Información de contacto</h2>
+    <ul>
+      <li><strong>Correo:</strong> daniela@email.com</li>
+      <li><strong>Teléfono:</strong> +506 8888 8888</li>
+      <li><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/daniela</a></li>
+      <li><strong>GitHub:</strong> <a href="#">github.com/daniela</a></li>
+    </ul>
   </section>
 
-  <section id="accesos">
-    <h2>Accesos rápidos</h2>
-    <div class="botones">
-      <a href="CV_Daniela.pdf" download class="btn cv glow">📄 Descargar CV</a>
-      <a href="https://linkedin.com/in/tuusuario" target="_blank" class="btn linkedin glow">🔗 LinkedIn</a>
-      <a href="https://credly.com/users/tuusuario/badges" target="_blank" class="btn credly glow">🏅 Credly</a>
+  <section id="acerca">
+    <h2>Acerca de mí</h2>
+    <p>Soy una apasionada del diseño y la tecnología, con una visión clara para crear soluciones innovadoras. Me especializo en representar estéticas modernas que conectan con la cultura geek.</p>
+  </section>
+
+  <section id="habilidades">
+    <h2>Habilidades técnicas</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React, Node.js</li>
+      <li>Git & GitHub</li>
+      <li>Diseño UI/UX</li>
+    </ul>
+    <h2>Habilidades blandas</h2>
+    <ul>
+      <li>Comunicación efectiva</li>
+      <li>Pensamiento crítico</li>
+      <li>Trabajo en equipo</li>
+      <li>Resolución de problemas</li>
+    </ul>
+  </section>
+
+  <section id="experiencia">
+    <h2>Experiencia laboral</h2>
+    <ul>
+      <li>
+        <strong>Curso:</strong> Desarrollo Web <br/>
+        <strong>Rol:</strong> Diseñadora y programadora <br/>
+        <strong>Aprendizajes:</strong> diseño responsivo, integración de API, control de versiones
+      </li>
+    </ul>
+  </section>
+
+  <section id="formacion">
+    <h2>Formación académica</h2>
+    <ul>
+      <li>Universidad CENFOTEC - Bachillerato en Ingeniería de Software (2025)</li>
+    </ul>
+  </section>
+
+  <section id="portafolio">
+    <h2>Proyectos</h2>
+    <div class="proyecto">
+      <img src="img/proyecto1.png" alt="Proyecto 1" />
+      <p><strong>Nombre:</strong> Web Geek Wear</p>
+      <p><strong>Descripción:</strong> Plataforma de venta de camisetas tech con estilo anime.</p>
+      <p><strong>Tecnologías:</strong> React, Firebase, Tailwind</p>
     </div>
+  </section>
+
+  <section id="descargas">
+    <h2>Descargar CV</h2>
+    <a href="cv_español.pdf" download>CV en español</a>
+    <a href="cv_english.pdf" download>CV en inglés</a>
   </section>
 
   <footer>
-    <p>© 2025 Daniela. Construido con ❤️ y café.</p>
+    <form id="contact-form">
+      <h3>Formulario de contacto</h3>
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Correo" required />
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
   </footer>
 </body>
 </html>
