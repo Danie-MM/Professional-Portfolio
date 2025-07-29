@@ -8,92 +8,247 @@
 </head>
 <body>
   <header>
-    <h1>Daniela Morales Meléndez</h1>
-    <p>Site Reliability Engineer || Software Development Student</p>
-    <nav>
-      <a href="#acerca">Acerca de mí</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#experiencia">Experiencia</a>
-      <a href="#formacion">Formación</a>
-      <a href="#portafolio">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+    <div class="encabezado">
+      <h1>Daniela Morales Meléndez</h1>
+      <p>Site Reliability Engineer || Software Development Student</p>
+    </div>
+
+    <div class="menu-container">
+      <button class="hamburger" aria-label="Abrir menú">&#9776;</button>
+      <nav class="menu-principal">
+        <a href="#acerca">Acerca de mí</a>
+        <a href="#formacion">Formación</a>
+        <a href="#certificaciones">Certificaciones</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#portafolio">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="contacto">
-    <h2>Información de contacto</h2>
-    <ul>
-      <li><strong>Correo:</strong> danielamoralesmelendez.cr@gmail.com</li>
-      <li><strong>Teléfono:</strong> +506 8488 2076</li>
-      <li><strong>LinkedIn:</strong> <a href="#">www.linkedin.com/in/daniela-morales-melendez</a></li>
-      <li><strong>GitHub:</strong> <a href="#">https://github.com/Danie-MM</a></li>
-    </ul>
+  <section id="perfil" class="seccion">
+    <img src="images/daniela.jpeg" alt="Foto profesional de Daniela" class="foto-perfil" />
+    <div class="redes">
+      <a href="https://www.linkedin.com/in/daniela-morales-melendez" target="_blank">
+        <img src="images\LinkedIn_icon.svg.webp"alt="LinkedIn" />
+      </a>
+      <a href="https://www.credly.com/users/daniela-morales" target="_blank">
+        <img src="images\credly.svg"alt="Credly" />
+      </a>
+      <a href="https://github.com/Danie-MM" target="_blank">
+        <img src="images\github.png"alt="GitHub" />
+      </a>
+      <a href="mailto:danielamoralesmelendez.cr@gmail.com">
+        <img src="images\mail.png"alt="mail" />
+      </a>
+      <a href="https://drive.google.com/drive/folders/1rPmD_qSym6NNQenG_FghqaOchFHL3Fgz?usp=sharing" target="_blank">
+        <img src="images\curriculum-vitae.png"alt="curriculum" />
+      </a>
+    </div>
   </section>
 
-  <section id="acerca">
+  <section id="acerca" class="seccion">
     <h2>Acerca de mí</h2>
-    <p>Soy una apasionada del diseño y la tecnología, con una visión clara para crear soluciones innovadoras. Me especializo en representar estéticas modernas que conectan con la cultura geek.</p>
+    <p>Profesional multidisciplinaria con una sólida formación técnica en Desarrollo de Software e Ingeniería de Confiabilidad de Sitios (SRE). Apasionada por la computación en la nube, la automatización y la seguridad, con un enfoque en la optimización de sistemas y la mejora continua de la infraestructura tecnológica. Posee experiencia en el uso de herramientas de observabilidad y monitoreo, así como en la implementación de principios de confiabilidad y resiliencia en entornos de TI.</p>
+    <p>Comunicadora trilingüe (español, inglés e italiano) con una destacada habilidad para colaborar eficazmente en equipos internacionales y multidisciplinarios, contribuyendo tanto en entornos técnicos como en iniciativas de mentoría y divulgación tecnológica. Actualmente se desempeña como pasante de SRE en IBM, donde aplica sus conocimientos en la gestión de sistemas en la nube y el soporte a procesos de automatización e infraestructura crítica.</p>
   </section>
 
-  <section id="habilidades">
-    <h2>Habilidades técnicas</h2>
+  <section id="formacion" class="seccion">
+    <h2>Formación académica</h2>
     <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>React, Node.js</li>
-      <li>Git & GitHub</li>
-      <li>Diseño UI/UX</li>
+      <li>Técnico en Desarrollo de Software – Universidad Cenfotec, Costa Rica (2024–2025)</li>
+      <li>Bachillerato en Ingeniería de Desarrollo de Software – Universidad Cenfotec (2024–Presente)</li>
+      <li>Bachillerato en Ingeniería Topográfica y Catastral – Universidad Autónoma de Costa Rica (2016–2023)</li>
     </ul>
-    <h2>Habilidades blandas</h2>
+  </section>
+
+  <section id="certificaciones" class="seccion">
+    <h2>Credenciales digitales obtenidas</h2>
+    <ul> 
+      <p><strong>IBM Mentor & Speaker</strong> IBM, Jun 2025</p> 
+      <p><strong>IT For Girls: Ciberseguridad y OT</strong> WoMakersCode, Jun 2025</p> 
+      <p><strong>Security Girls LATAM</strong>WoMakersCode, May 2025</p> 
+      <p><strong>Describe Identity Concepts</strong>Microsoft, May 2025</p> 
+      <p><strong>Describe Security and Compliance Concepts</strong>Microsoft, Mar 2025</p> 
+      <p><strong>AWS Educate Introduction to Generative AI</strong>AWS, Mar 2025</p> 
+      <p><strong>Instana Operator</strong>IBM, Feb 2025</p> 
+      <p><strong>Instana Sales Foundations</strong>IBM, Feb 2025</p> 
+      <p><strong>Kubernetes for the Absolute Beginners</strong>Udemy, Feb 2025</p> 
+      <p><strong>IBM watsonx.ai Technical Essentials</strong>IBM, Jan 2025</p> 
+      <p><strong>Linux Commands & Shell Scripting</strong>edX, Jan 2025</p> 
+      <p><strong>Enterprise Design Thinking - Practitioner</strong>IBM, Nov 2024</p> 
+      <p><strong>Enterprise Design Thinking - Team Essentials for AI</strong>IBM, Nov 2024</p> 
+      <p><strong>Project Management Fundamentals</strong>IBM, Nov 2024</p> 
+      <p><strong>Women in Cloud</strong>CINDE, Nov 2024</p> 
+      <p><strong>AWS Cloud Practitioner Exam Prep</strong>edX, Oct 2024</p> 
+      <p><strong>Introduction to DevOps and Site Reliability Engineering</strong>Linux Foundation, Oct 2024</p> 
+      <p><strong>Secure Software Development: Requirements, Design and Reuse</strong>Linux Foundation, Sep 2024</p> 
+      <p><strong>Google Cloud Computing Foundations</strong>Google Cloud, Aug 2024</p> 
+      <p><strong>Web Development Fundamentals</strong>IBM SkillsBuild, Aug 2024</p> 
+      <p><strong>AWS Academy Cloud Foundations</strong>AWS Academy, Jul 2024</p> 
+      <p><strong>Agile Explorer</strong>IBM, Jun 2024</p> 
+      <p><strong>Working in a Digital World: Professional Skills</strong>IBM, Apr 2024</p> 
+      <p><strong>Job Application Essentials</strong>IBM, Apr 2024</p> 
+      <p><strong>Explore Emerging Tech</strong>IBM, Apr 2024</p> 
+      <p><strong>Cloud Computing Core</strong>edX, May 2024</p> 
+      <p><strong>AWS Cloud Practitioner Essentials</strong>edX, May 2024</p> 
+      <p><strong>Introduction to Cloud Computing</strong>edX, May 2024</p> 
+      <p><strong>Azure Fundamentals</strong>INA, Dec 2023</p> 
+    </ul>
+  </section>
+
+  <section id="habilidades" class="seccion">
+    <h2>Tech Skills</h2>
+    <ul>
+      <li><strong>Lenguajes:</strong> Java, JavaScript, HTML, CSS</li>
+      <li><strong>Cloud:</strong> AWS, Azure, Google Cloud</li>
+      <li><strong>DevOps:</strong> Git, GitHub, Kubernetes, Instana, Shell</li>
+      <li><strong>Herramientas:</strong> VS Code, IntelliJ, Okta, Salesforce</li>
+      <li><strong>Otros:</strong> Dominio de Español (nativo), Inglés (C1), Italiano (C1)</li>
+
+    </ul>
+    <h2>Soft & Power Skills</h2>
     <ul>
       <li>Comunicación efectiva</li>
       <li>Pensamiento crítico</li>
       <li>Trabajo en equipo</li>
       <li>Resolución de problemas</li>
+      <li>Design Thinking</li>
+      <li>Agile Explorer</li>
     </ul>
   </section>
 
-  <section id="experiencia">
-    <h2>Experiencia laboral</h2>
+  <section id="experiencia" class="seccion">
+    <h2>Experiencia laboral - Actualidad </h2>
+    <h3>Site Reliability Engineer Intern – IBM</h3> 
+    <p><em>(Jan 2025 – Present)</em>
     <ul>
-      <li>
-        <strong>Curso:</strong> Desarrollo Web <br/>
-        <strong>Rol:</strong> Diseñadora y programadora <br/>
-        <strong>Aprendizajes:</strong> diseño responsivo, integración de API, control de versiones
-      </li>
+      <p>Brindo soporte integral en herramientas de observabilidad y monitoreo como Instana y LogDNA, asegurando la visibilidad y el rendimiento óptimo de los sistemas en la nube. </p>
+      <p>Gestiono y doy mantenimiento a servicios contenerizados basados en Kubernetes, optimizando la disponibilidad y escalabilidad de las aplicaciones.</p>
+      <p>Aplico de forma práctica los principios de Site Reliability Engineering (SRE) para la detección temprana de incidentes, respuesta proactiva, automatización de tareas repetitivas y mejora continua de los procesos operativos.</p>
+      <p>Además, participo activamente en iniciativas de voluntariado y mentoría técnica, colaborando en charlas y programas educativos para promover la participación de mujeres en tecnología y fortalecer la cultura de colaboración y aprendizaje continuo dentro del entorno profesional.</p>
     </ul>
   </section>
 
-  <section id="formacion">
-    <h2>Formación académica</h2>
-    <ul>
-      <li>Universidad CENFOTEC - Bachillerato en Ingeniería de Software (2025)</li>
-    </ul>
+  <section id="experiencia" class="seccion">
+    <h2>Experiencia laboral - Pasada</h2>
+    <h3>Desarrolladora Full-Stack Junior – Universidad Cenfotec</h3>
+  <p><em>(2024 – Presente)</em></p>
+  <ul>
+    <p>Desarrollé una aplicación de duelos estilo Pokémon, gestionando tanto el frontend como el backend.</p>
+    <p>Creé perfiles de usuario, opciones de personalización y gestión de estadísticas de batallas.</p>
+    <p>Administré una base de datos NoSQL con aproximadamente 200 personajes Pokémon utilizando Node.js y Mongoose.</p>
+  </ul>
+
+  <h3>Asistente Técnica – Fundación Costa Rica-Canadá, San José</h3>
+  <p><em>(2022 – 2023)</em></p>
+  <ul>
+    <p>Coordiné la gestión topográfica en proyectos de construcción, incluyendo trabajo de campo y de oficina.</p>
+    <p>Implementé mejoras en los procesos institucionales de permisos de construcción y brindé soporte técnico durante inspecciones y validaciones topográficas.</p>
+  </ul>
+
+  <h3>Desarrollo Técnico de Negocios – Geotecnologías, San José</h3>
+  <p><em>(2022 – 2023)</em></p>
+  <ul>
+    <p>Manejé equipos topográficos avanzados y drones para proyectos de construcción y arquitectura, optimizando los tiempos de inspección.</p>
+    <p>Colaboré con desarrolladores de software para integrar inteligencia artificial en drones, mejorando los tiempos de inspección y la precisión de las mediciones.</p>
+  </ul>
+
+  <h3>Gerente de Cuentas para Italia – Best of Costa Rica, San José</h3>
+  <p><em>(2019 – 2020)</em></p>
+  <ul>
+    <p>Gestioné cuentas internacionales, servicio al cliente y desarrollo de paquetes turísticos para clientes en Italia, EE. UU. y Canadá.</p>
+    <p>Negocié contratos y brindé atención al cliente en italiano e inglés, manteniendo relaciones comerciales con múltiples países.</p>
+  </ul>
+</section>
   </section>
 
-  <section id="portafolio">
-    <h2>Proyectos</h2>
-    <div class="proyecto">
-      <img src="img/proyecto1.png" alt="Proyecto 1" />
-      <p><strong>Nombre:</strong> Web Geek Wear</p>
-      <p><strong>Descripción:</strong> Plataforma de venta de camisetas tech con estilo anime.</p>
-      <p><strong>Tecnologías:</strong> React, Firebase, Tailwind</p>
+<section id="portafolio" class="seccion">
+  <h2>Proyectos</h2>
+  <div class="portafolio-container">
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/proyecto1logo.png" alt="Duelos Pokemon" />
+        </div>
+        <div class="card-back">
+          <p><strong>Nombre:</strong> Duelos Pokemon</p>
+          <p><strong>Descripción:</strong> Juego de combate inspirado en Pokemon, con 200 pokemones disponibles.</p>
+          <p><strong>Tecnologías:</strong> Java, JavaScript, CSS, HTML</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/proyecto2logo.png" alt="Stock trading" />
+        </div>
+        <div class="card-back">
+          <p><strong>Nombre:</strong> Stock trading</p>
+          <p><strong>Descripción:</strong> Plataforma de venta y compra de acciones</p>
+          <p><strong>Tecnologías:</strong> C++, HTML, JavaScript, CSS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="contacto" class="seccion">
+    <h2>Información de contacto</h2>
+    <div class="info-contacto">
+      <ul>
+        <li><strong>Correo:</strong> <a href="mailto:danielamoralesmelendez.cr@gmail.com">danielamoralesmelendez.cr@gmail.com</a></li>
+        <li><strong>Whatsapp:</strong> <a href="https://wa.me/+50684882076">+506 8488 2076</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/daniela-morales-melendez" target="_blank">linkedin.com/in/daniela-morales-melendez</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/Danie-MM" target="_blank">github.com/Danie-MM</a></li>
+        <li><strong>Credly:</strong> <a href="https://www.credly.com/users/daniela-morales.77986cbd" target="_blank">credly.com/users/daniela-morales.77986cbd</a></li>
+      </ul>
+    </div>
+
+    <div class="botones-cv">
+      <a href="Daniela_Morales_CV_2025_ESPANOL.pdf" class="btn-cv" target="_blank">
+        Descargar CV
+      </a>
+      <a href="Daniela_Morales_CV_2025_ENGLISH.pdf" class="btn-cv" target="_blank">
+        Download CV
+      </a>
+    </div>
+
+
+    <div class="formulario-contacto">
+      <form id="contact-form">
+        <h3>Formulario de contacto</h3>
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Correo" required />
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
     </div>
   </section>
 
-  <section id="descargas">
-    <h2>Descargar CV</h2>
-    <a href="cv_español.pdf" download>CV en español</a>
-    <a href="cv_english.pdf" download>CV en inglés</a>
-  </section>
+  <script>
+    const boton = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu-principal');
+    boton.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
 
-  <footer>
-    <form id="contact-form">
-      <h3>Formulario de contacto</h3>
-      <input type="text" placeholder="Nombre" required />
-      <input type="email" placeholder="Correo" required />
-      <textarea placeholder="Mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </footer>
+  <script>
+  window.addEventListener('scroll', () => {
+    const foto = document.querySelector('.foto-perfil');
+    if (window.scrollY > 100) {
+      foto.classList.add('blanco-negro');
+    } else {
+      foto.classList.remove('blanco-negro');
+    }
+  });
+</script>
+
+
 </body>
 </html>
