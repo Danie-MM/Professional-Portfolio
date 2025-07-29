@@ -219,15 +219,49 @@
     </div>
 
 
-    <div class="formulario-contacto">
-      <form id="contact-form">
-        <h3>Formulario de contacto</h3>
-        <input type="text" placeholder="Nombre" required />
-        <input type="email" placeholder="Correo" required />
-        <textarea placeholder="Mensaje" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
+  <div class="formulario-contacto">
+  <form id="contact-form" action="https://formspree.io/f/xjkorqqp" method="POST">
+    <h3>Formulario de contacto</h3>
+
+    <input type="text" name="name" placeholder="Nombre" required />
+    <input type="email" name="email" placeholder="Correo" required />
+    <textarea name="message" placeholder="Mensaje" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Mensaje de estado -->
+  <p id="form-status" style="display:none; margin-top:10px;"></p>
+</div>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault(); 
+
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      status.style.display = 'block';
+      status.style.color = 'limegreen';
+      status.textContent = '¡Mensaje enviado con éxito!';
+      form.reset(); 
+    } else {
+      status.style.display = 'block';
+      status.style.color = 'red';
+      status.textContent = 'Ocurrió un error. Intenta nuevamente.';
+    }
+  });
+</script>
+
+
   </section>
 
   <script>
