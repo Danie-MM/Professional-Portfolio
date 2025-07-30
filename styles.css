@@ -320,9 +320,9 @@ header {
 /* === CONTACTO === */
 
 #contacto h2 {
-  font-size: 2.4rem; /* texto más grande */
+  font-size: 2.4rem; 
   font-weight: 700;
-  color: #0f969c; /* tono turquesa jade */
+  color: #0f969c; 
   text-align: center;
   margin-bottom: 20px;
   position: relative;
@@ -404,6 +404,24 @@ header {
 #contact-form button:hover {
   background-color: #13afb2;
 }
+
+.info-contacto a {
+  color: #00c6a2; 
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.info-contacto a:hover {
+  color: #13afb2; 
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: #bdeeea; 
+  font-style: italic;
+}
+
 
 /* === RESPONSIVO === */
 @media screen and (max-width: 768px) {
